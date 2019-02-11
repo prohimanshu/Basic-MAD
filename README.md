@@ -1,2 +1,3 @@
 # Basic-MAD
 ask @HimanshuDot
+In computing, cross-platform software (also multi-platform software or platform-independent software) is computer software that is implemented on multiple computing platforms. Cross-platform software may be divided into two types; one requires individual building or compilation for each platform that it supports, and the other one can be directly run on any platform without special preparation, e.g., software written in an interpreted language or pre-compiled portable bytecode for which the interpreters or run-time packages are common or standard components of all platforms.
