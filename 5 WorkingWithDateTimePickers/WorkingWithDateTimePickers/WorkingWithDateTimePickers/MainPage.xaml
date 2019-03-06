@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WorkingWithDateTimePickers"
+             x:Class="WorkingWithDateTimePickers.MainPage"
+             BackgroundColor="#42b9f4">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Pickers" FontSize="20" HorizontalOptions="Center"/>
+            <DatePicker x:Name="dp" MaximumDate="2020/12/31" MinimumDate="2000/12/31" Format="yyyy/dd/mm"/>
+            <TimePicker x:Name="tp"/>
+            <Button x:Name="Buttn" Clicked="Buttn_Clicked" Text="Details"/>
+            <Label x:Name="details"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
