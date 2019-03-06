@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExplicitStylesbasic"
+             x:Class="ExplicitStylesbasic.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+            <Style x:Key="EntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Name" Style="{StaticResource LabelStyle}"/>
+            <Entry Placeholder="Name" Style="{StaticResource EntryStyle}"/>
+            <Label Text="Email Address" Style="{StaticResource LabelStyle}"/>
+            <Entry Placeholder="Email Address" Style="{StaticResource EntryStyle}"/>
+            <Label Text="Address" Style="{StaticResource LabelStyle}"/>
+            <Entry Placeholder="Address" Style="{StaticResource EntryStyle}"/>
+            <Label Text="Phone Number" Style="{StaticResource LabelStyle}"/>
+            <Entry Placeholder="Phone Number" Style="{StaticResource EntryStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
