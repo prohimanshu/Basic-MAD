@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridListView"
+             x:Class="GridListView.MainPage">
+
+    <StackLayout>
+        <Label Text="Contacts" FontSize="Medium" TextColor="Maroon" HorizontalOptions="Center"/>
+        <ListView x:Name="Mylist">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Grid BackgroundColor="Maroon" Padding="10">
+                                <Label Text="{Binding ID}" TextColor="White"/>
+                            </Grid>
+                            <StackLayout Orientation="Vertical">
+                                <Label Text="{Binding Name}" TextColor="Maroon"/>
+                                <Label Text="{Binding Address}" TextColor="Purple"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
